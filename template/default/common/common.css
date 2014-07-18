@@ -667,7 +667,7 @@ CSS 写作注意事项：
 			 .ct2_a h1.mt { display: none; }
 			 .ct2_a .tb { margin-top: 3px; }
 		.ct2_a .mn { float: right; width: 810px; }
-			.ct2_a .mn { display: inline; margin-right: 10px; padding-top: 10px; width: 800px; }
+			.ct2_a .mn { display: inline; margin-right: 10px; padding-top: 10px; width: 1030px; }
 				#nv_userapp .ct2_a .mn, .ct2_a_r .mn { margin-right: 0; width: 810px; }
 
 		.ct3_a .mn { float: left; margin-left: 20px; width: 565px; }
@@ -1669,5 +1669,8 @@ DIY图片幻灯片未加载时隐藏,模块标识隐藏
 /*
 Richard Dong
 */
+.block .dxb_bc .ml img { width: 163px; height: 122px; }
+.block .dxb_bc .slideshow img { width: 364px; height: 196px; }
+.block .dxb_bc .xld .m img { width: 120px; height: 80px; }
 .block .dxb_bc { padding: 10px; }
 .blocktitle { border-bottom: 1px solid {CONTENTSEPARATE}; background: {COMMONBG}; }

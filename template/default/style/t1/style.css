@@ -78,4 +78,5 @@ body { /*background: transparent url(bgimg.jpg) no-repeat 50% 0;*/ }
 /* 重定义好友列表 */
 #nv_home .buddy li { background-color: transparent; border: none; }
 /* Richard Dong */
+#flw_post_extra { width: 859px; }
 .blocktitle { background: #FFECEC; }
