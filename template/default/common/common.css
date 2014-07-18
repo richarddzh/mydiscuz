@@ -88,7 +88,7 @@ CSS 写作注意事项：
 	Last Modify:	Pony
 */
 	* { word-wrap: break-word; }
-	body { {BGCODE}; }
+	body { /*{BGCODE};*/ }
 	body, input, button, select, textarea { font: {FONTSIZE} {FONT}; color: {TABLETEXT}; }
 		textarea { resize: none; }
 	body, ul, ol, li, dl, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset, .pr, .pc { margin: 0; padding: 0; }
@@ -573,7 +573,7 @@ CSS 写作注意事项：
 		.pmfl			PM friend list (Window)
 		*/
 
-/* 通用容器，定义页面宽度 */ .wp { margin: 0 auto; width: 960px; } #wp .wp { width: auto; }
+/* 通用容器，定义页面宽度 */ .wp { margin: 0 auto; width: 1190px; } #wp .wp { width: auto; }
 
 /* 页头 */
 	#toptb { line-height: 24px; }
@@ -582,19 +582,19 @@ CSS 写作注意事项：
 		#toptb a.hover { background-color: #FFF; }
 		#toptb .pipe { float: left; display: none; }
 	#hd { border-bottom: {HEADERBORDER} solid {SPECIALBORDER}; {HEADERBGCODE} }
-		#hd .wp { padding: 10px 0 0; }
+		#hd .wp { /*padding: 10px 0 0;*/ }
 			#diy-tg { float: right; width: 55px; background: url({STATICURL}image/diy/panel-toggle.png) no-repeat 100% 1px; text-indent: -9999px; overflow: hidden; }
 				#diy-tg_menu { position: absolute; margin: -2px 0 0 -1px; padding: 6px 0; width: 72px; height: 48px; background: url({STATICURL}image/diy/panel-toggle-drop.png) no-repeat 0 0; text-align: center; }
 				#diy-tg_menu a { float: none !important; }
 			#toptb #diy-tg_menu { margin: -6px 0 0 -10px; }
 
-			.hdc { min-height: 70px; }
+			.hdc { /*min-height: 70px;*/ }
 				.ie6 .hdc { height: 70px; }
-			#hd h2 { padding: 0 20px 8px 0; float: left; }
+			#hd h2 { display: none; padding: 0 20px 8px 0; float: left; }
 				#space #hd h2 { margin-top: 0; }
-			#hd .fastlg { padding-top: 10px; }
+			#hd .fastlg { display: none; padding-top: 10px; }
 
-			#scbar { height: 44px; border: solid {SPECIALBG}; border-width: 0 1px 1px; background: url({IMGDIR}/search.png) repeat-x 0 0; line-height: 44px; overflow: hidden; }
+			#scbar { display: none; height: 44px; border: solid {SPECIALBG}; border-width: 0 1px 1px; background: url({IMGDIR}/search.png) repeat-x 0 0; line-height: 44px; overflow: hidden; }
 				.scbar_icon_td { width: 50px; background: url({IMGDIR}/search.png) no-repeat 0 -74px; }
 				.scbar_txt_td, .scbar_type_td { background: url({IMGDIR}/search.png) repeat-x 0 -222px; }
 					#scbar_txt { width: 400px; border: 1px solid #FFF; outline: none; font-size: 14px; }
@@ -625,10 +625,10 @@ CSS 写作注意事项：
 						#mu a { float: left; display: inline; margin: 5px 6px; padding: 0 10px; white-space: nowrap; }
 							#mu a:hover { margin: 4px 5px; border: 1px solid {SPECIALBORDER}; background: {SPECIALBG}; color: {HIGHLIGHTLINK}; text-decoration: none; }
 				.floatmu { position: absolute; left: 0; top: 0; }
-			#um { padding-top: 10px; padding-right: 60px; _padding-right: 54px; line-height: 2.3; zoom: 1; }
+			#um { /*padding-top: 10px; padding-right: 60px; _padding-right: 54px;*/ line-height: 2.3; zoom: 1; }
 				#um, #um a { color: {HEADERTEXT}; }
-				#um p { text-align: right; }
-				#um .avt { display: inline; margin-right: -60px; }
+				#um p { display: inline; text-align: right; }
+				#um .avt { display: none; margin-right: -60px; }
 				.vwmy { padding-left: 16px; background: url({IMGDIR}/user_online.gif) no-repeat 0 2px; }
 					.vwmy.qq { background: url({IMGDIR}/connect_qq.gif) no-repeat scroll 0 0; padding-left: 20px; }
 				/* .topnav .new, .sch .new 分别为为个人中心和搜索页面头部新消息样式 */
@@ -657,7 +657,7 @@ CSS 写作注意事项：
 		.ie6 #ct { height: 300px; }
 		.mn { overflow: hidden; }
 		.ct1 { border: 1px solid {WRAPBORDERCOLOR}; border-top: none; }
-		.ct2 .mn { float: left; width: 730px; margin-bottom: 1em; }
+		.ct2 .mn { float: left; width: 960px; margin-bottom: 1em; }
 		.ct2 .sd { float: right; width: 220px; overflow: hidden; _overflow-y: visible; }
 
 		.appl { float: left; overflow: hidden; margin-bottom: 10px; padding: 6px 10px; width: 117px; }
@@ -872,9 +872,9 @@ CSS 写作注意事项：
 	.xld dd { margin-bottom: 8px; }
 		/* text with thumbnail image ( must with the additional class .cl ) */
 		.xld .m { float: left; margin: 8px 8px 10px 0; }
-		.xld .atc { float: right; margin-left: 20px; }
+		.xld .atc { float: left; margin-right: 20px; }
 			.ie8 .xld .atc { max-width: 86px; }
-			.xld .atc img { padding: 2px; max-width: 80px; max-height: 80px; border: 1px solid #CCC; background: {WRAPBG}; }
+			.xld .atc img { padding: 2px; max-width: 160px; max-height: 80px; border: 1px solid #CCC; background: {WRAPBG}; }
 				.ie6 .xld .atc img { width: expression(this.width > 80 && this.width>=this.height ? 80 : true); height: expression(this.height > 80 && this.width<=this.height ? 80 : true); }
 		.xld a.d, .xl a.d, .attc a.d, .c a.d, .sinf a.d { float: right; width: 20px; height: 20px; overflow: hidden; line-height: 100px; background: url({IMGDIR}/op.png) no-repeat 0 -2px; }
 			.attc a.d { float: left; }
@@ -1407,7 +1407,7 @@ a.progressCancel { display: block; float: right; width: 14px; height: 14px; back
 
 
 /* ------------------------------------------------------------------------ 拖拽及页面 DIY */
-.frame, .frame-tab { margin-bottom: 10px; border: 1px solid {WRAPBORDERCOLOR}; background: {WRAPBG}; }
+.frame, .frame-tab { margin-bottom: 10px; /*border: 1px solid {WRAPBORDERCOLOR}; background: {WRAPBG};*/ }
 	.title { padding: 0 10px; height: 32px; font-size: 14px; font-weight: 700; line-height: 32px; overflow: hidden; }
 		.frame-title, .frametitle, .tab-title { background: {COMMONBG} url({IMGDIR}/title.png) repeat-x 0 100%; }
 
@@ -1458,9 +1458,9 @@ a.progressCancel { display: block; float: right; width: 14px; height: 14px; back
 				.frame-tab .tb .a a { background: #FFF; font-weight: 700; }
 		.frame-tab .tb-c { padding: 10px 16px; }
 
-.block { margin: 10px 10px 0; }
-	.frame-1-2 .sd .block, .col-l .block, .frame-2-1 .mn .block, .frame-1-1-1 .col-c .block, .frame-1-3 .sd .block, .frame-3-1 .mn .block { margin-right: 10px; }
-	.frame-1-2 .mn .block, .col-r .block, .frame-2-1 .sd .block, .frame-1-1-1 .col-c .block, .frame-1-3 .mn .block, .frame-3-1 .sd .block { margin-left: 10px; }
+.block { border: 1px solid {COMMONBORDER}; background: {WRAPBG}; /*margin: 10px 10px 0;*/ }
+	.frame-1-2 .sd .block, .col-l .block, .frame-2-1 .mn .block, .frame-1-1-1 .col-c .block, .frame-1-3 .sd .block, .frame-3-1 .mn .block, .frame-1-1-1-l .block, .frame-1-2-l .block { margin-right: 10px; }
+	.frame-1-2 .mn .block, .col-r .block, .frame-2-1 .sd .block, .frame-1-1-1 .col-c .block, .frame-1-3 .mn .block, .frame-3-1 .sd .block, .frame-1-1-1-r .block, .frame-2-1-r .block { margin-left: 10px; }
 	body#space .block { margin: 0 5px 10px; }
 .temp {margin:1px;}
 /* 重定义 frame */
@@ -1666,3 +1666,8 @@ DIY图片幻灯片未加载时隐藏,模块标识隐藏
 	.unfixed { color: #F26C4F; }
 .plugin { width: 300px; }
 	.plugin .bm_h { border-color: {COMMONBORDER}; color: {TABLETEXT}; background: {COMMONBG}; }
+/*
+Richard Dong
+*/
+.block .dxb_bc { padding: 10px; }
+.blocktitle { border-bottom: 1px solid {CONTENTSEPARATE}; background: {COMMONBG}; }

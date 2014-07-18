@@ -5,7 +5,7 @@ Powered by Discuz! X
 */
 
 html { background: #FAF6ED url(background.png); }
-body { background: transparent url(bgimg.jpg) no-repeat 50% 0; }
+body { /*background: transparent url(bgimg.jpg) no-repeat 50% 0;*/ }
 #nv { background-color: #BA350F; background-image: url(nv.png); }
 	#nv li, #nv li a:hover, #nv li.hover a, #nv li.hover a:hover { background-image: url(nv_a.png) !important; }
 	#nv li.a { background-color: #840000; }
@@ -77,3 +77,5 @@ body { background: transparent url(bgimg.jpg) no-repeat 50% 0; }
 
 /* 重定义好友列表 */
 #nv_home .buddy li { background-color: transparent; border: none; }
+/* Richard Dong */
+.blocktitle { background: #FFECEC; }

@@ -18,6 +18,7 @@ $lang = array (
   'thread_poll' => '投票',
   'credits' => '积分',
   'login' => '登录',
+  'register' => '注册',
   'active_email' => '接收邮箱',
   'active_email_comment' => '必填，用来接收邀请码的邮箱地址',
   'apitype_alipay' => '支付宝',
