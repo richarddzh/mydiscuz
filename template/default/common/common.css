@@ -620,8 +620,8 @@ CSS 写作注意事项：
 						#nv li.hover a:hover, #nv li.hover a { background: url({IMGDIR}/nv_a.png) no-repeat 50% -99px; }
 			#mu { position: relative; z-index: 1; }
 				.ie6 #mu, .ie7 #mu { line-height: 0; font-size: 0; }
-				#mu ul { background: url({IMGDIR}/mu_bg.png) no-repeat 0 100%; line-height: 22px; z-index: 2; font-size: 12px; }
-					#mu li { float: left; height: 32px }
+				#mu ul { background: url({IMGDIR}/mu_bg.png) no-repeat 0 100%; line-height: 28px; z-index: 2; font-size: 14px; }
+					#mu li { float: left; height: 38px }
 						#mu a { float: left; display: inline; margin: 5px 6px; padding: 0 10px; white-space: nowrap; }
 							#mu a:hover { margin: 4px 5px; border: 1px solid {SPECIALBORDER}; background: {SPECIALBG}; color: {HIGHLIGHTLINK}; text-decoration: none; }
 				.floatmu { position: absolute; left: 0; top: 0; }
@@ -858,10 +858,11 @@ CSS 写作注意事项：
 		*/
 
 /* 文本列表 */
-.xl li { margin: 2px 0; }
+.xl li { /*margin: 2px 0;*/ }
 	.xl em { float: right; padding-left: 5px; }
 		.xl em, .xl em a { color: {LIGHTTEXT}; }
 	.xl label, .xl label a { color: #C00; }
+		.xl label { margin-right: 0.5em; }
 	.xl1 li { height: 1.5em; overflow: hidden; }
 		.xl1_elp { float: left; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 	.xl2 li { float: left; margin: 2px 0; padding: 0; width: 48.6%; height: 1.5em; overflow: hidden; }
@@ -1669,8 +1670,10 @@ DIY图片幻灯片未加载时隐藏,模块标识隐藏
 /*
 Richard Dong
 */
-.block .dxb_bc .ml img { width: 163px; height: 122px; }
-.block .dxb_bc .slideshow img { width: 364px; height: 196px; }
-.block .dxb_bc .xld .m img { width: 120px; height: 80px; }
+.block .dxb_bc .xl li { line-height: 26px; height: 26px; font-size: 115%; }
+.block .dxb_bc .ml img { width: 182px; height: 136px; }
+.block .dxb_bc .slideshow img { width: 364px; height: 260px; }
+.block .dxb_bc .xld .m img { width: 120px; height: 89px; }
 .block .dxb_bc { padding: 10px; }
 .blocktitle { border-bottom: 1px solid {CONTENTSEPARATE}; background: {COMMONBG}; }
+#dz_header { height: 100px; background: #ff9999; }
