@@ -588,11 +588,11 @@ CSS 写作注意事项：
 				#diy-tg_menu a { float: none !important; }
 			#toptb #diy-tg_menu { margin: -6px 0 0 -10px; }
 
-			.hdc { /*min-height: 70px;*/ }
+			.hdc { min-height: 75px; }
 				.ie6 .hdc { height: 70px; }
 			#hd h2 { display: none; padding: 0 20px 8px 0; float: left; }
 				#space #hd h2 { margin-top: 0; }
-			#hd .fastlg { display: none; padding-top: 10px; }
+			#hd .fastlg { padding-top: 10px; }
 
 			#scbar { display: none; height: 44px; border: solid {SPECIALBG}; border-width: 0 1px 1px; background: url({IMGDIR}/search.png) repeat-x 0 0; line-height: 44px; overflow: hidden; }
 				.scbar_icon_td { width: 50px; background: url({IMGDIR}/search.png) no-repeat 0 -74px; }
@@ -625,10 +625,10 @@ CSS 写作注意事项：
 						#mu a { float: left; display: inline; margin: 5px 6px; padding: 0 10px; white-space: nowrap; }
 							#mu a:hover { margin: 4px 5px; border: 1px solid {SPECIALBORDER}; background: {SPECIALBG}; color: {HIGHLIGHTLINK}; text-decoration: none; }
 				.floatmu { position: absolute; left: 0; top: 0; }
-			#um { /*padding-top: 10px; padding-right: 60px; _padding-right: 54px;*/ line-height: 2.3; zoom: 1; }
+			#um { padding-top: 10px; padding-right: 60px; _padding-right: 54px; line-height: 2.3; zoom: 1; }
 				#um, #um a { color: {HEADERTEXT}; }
-				#um p { display: inline; text-align: right; }
-				#um .avt { display: none; margin-right: -60px; }
+				#um p { text-align: right; }
+				#um .avt { margin-right: -60px; }
 				.vwmy { padding-left: 16px; background: url({IMGDIR}/user_online.gif) no-repeat 0 2px; }
 					.vwmy.qq { background: url({IMGDIR}/connect_qq.gif) no-repeat scroll 0 0; padding-left: 20px; }
 				/* .topnav .new, .sch .new 分别为为个人中心和搜索页面头部新消息样式 */
@@ -1676,4 +1676,3 @@ Richard Dong
 .block .dxb_bc .xld .m img { width: 120px; height: 89px; }
 .block .dxb_bc { padding: 10px; }
 .blocktitle { border-bottom: 1px solid {CONTENTSEPARATE}; background: {COMMONBG}; }
-#dz_header { height: 100px; background: #ff9999; }
