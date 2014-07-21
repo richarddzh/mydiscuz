@@ -79,5 +79,6 @@ body { /*background: transparent url(bgimg.jpg) no-repeat 50% 0;*/ }
 #nv_home .buddy li { background-color: transparent; border: none; }
 /* Richard Dong */
 .hdc { background: url(header.jpg) no-repeat; }
+.hdc .swf { display: none; }
 #flw_post_extra { width: 859px; }
 .blocktitle { background: #FFECEC; }

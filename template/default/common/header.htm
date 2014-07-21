@@ -64,6 +64,7 @@
 					<!--{hook/global_cpnav_extra1}-->
 				</div>
 				<div class="y">
+					<a href="admin.php">{lang admincp}</a>
 					<a href="member.php?mod=logging&action=login">{lang login}</a>
 					<a href="member.php?mod=register">{lang register}</a>
 					<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="{lang switch_blind}" class="switchblind">{lang switch_blind}</a>
@@ -116,6 +117,12 @@
 		<div id="hd">
 			<div class="wp">
 				<div class="hdc cl">
+					<div class="swf">
+						<object type="application/x-shockwave-flash" data="template/default/style/t2/header.swf" width="1190" height="200"> 
+							<param name="movie" value="template/default/style/t2/header.swf" />
+							<param name="quality" value="high" />
+						</object>
+					</div>
 					<!--{eval $mnid = getcurrentnav();}-->
 					<h2><!--{if !isset($_G['setting']['navlogos'][$mnid])}--><a href="{if $_G['setting']['domain']['app']['default']}http://{$_G['setting']['domain']['app']['default']}/{else}./{/if}" title="$_G['setting']['bbname']">{$_G['style']['boardlogo']}</a><!--{else}-->$_G['setting']['navlogos'][$mnid]<!--{/if}--></h2>
 
