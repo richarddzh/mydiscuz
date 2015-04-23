@@ -1,5 +1,6 @@
-config/
 data/
 uc_client/data/
 uc_server/data/
+config/config_global.php
+config/config_ucenter.php
 
