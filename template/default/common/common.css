@@ -88,6 +88,7 @@ CSS 写作注意事项：
 	Last Modify:	Pony
 */
 	* { word-wrap: break-word; }
+	html { background: #FAF6ED url(../../static/image/common/background.png); }
 	body { /*{BGCODE};*/ }
 	body, input, button, select, textarea { font: {FONTSIZE} {FONT}; color: {TABLETEXT}; }
 		textarea { resize: none; }
@@ -577,7 +578,7 @@ CSS 写作注意事项：
 
 /* 页头 */
 	#toptb { line-height: 24px; }
-		#toptb a { float: left; padding: 0 4px; height: 24px; }
+		#toptb a { float: right; padding: 0 4px; height: 24px; }
 		#toptb a.showmenu { padding-right: 15px; }
 		#toptb a.hover { background-color: #FFF; }
 		#toptb .pipe { float: left; display: none; }
@@ -607,14 +608,14 @@ CSS 写作注意事项：
 				#scbar_hot { padding-left: 8px; height: 45px; overflow: hidden; }
 					#scbar_hot strong, #scbar_hot a { float: left; margin-right: 8px; white-space: nowrap; }
 
-			#nv { overflow: hidden; padding-left: 3px; height: 33px; {MENUBGCODE}; }
+			#nv { overflow: hidden; padding-left: 3px; height: 33px; background-repeat: repeat-x; background-position: 0 -33px; background-color: #BA350F; background-image: url(../../static/image/common/nv.png); }
 				#nv li { float: left; padding-right: 1px; height: 33px; line-height: 33px; background: url({IMGDIR}/nv_a.png) no-repeat 100% 0; font-weight: 700; font-size: 14px; }
 					.ie_all #nv li { line-height: 36px; }
 					.ie6 #nv li { line-height: 33px; }
 					#nv li a { float: left; padding: 0 15px; height: 33px; }
 						#nv li a { color: {MENUTEXT}; }
 						#nv li span { display: none; }
-					#nv li.a { margin-left: -1px; {MENUHOVERBGCODE}; }
+					#nv li.a { margin-left: -1px; background-color: #840000; }
 						#nv li.a a { color: {MENUHOVERTEXT}; }
 						#nv li a:hover { background: url({IMGDIR}/nv_a.png) no-repeat 50% -66px; }
 						#nv li.hover a:hover, #nv li.hover a { background: url({IMGDIR}/nv_a.png) no-repeat 50% -99px; }
@@ -1676,3 +1677,14 @@ Richard Dong
 .block .dxb_bc .xld .m img { width: 120px; height: 89px; }
 .block .dxb_bc { padding: 10px; }
 .blocktitle { border-bottom: 1px solid {CONTENTSEPARATE}; background: {COMMONBG}; }
+/*
+[name]红[/name]
+[iconbgcolor]#BA350F[/iconbgcolor]
+Powered by Discuz! X
+*/
+/* 重定义字体 */
+#qmenu, .fl .bm_h h2 a, .xi1, #um .new, .topnav .new, .sch .new, .el .ec .hot em, .pll .s a.joins, #diy_backup_tip .xi2 { color: #BA350F; }
+.pll .s a.go { color: #FFF; }
+.xi2, .xi2 a { color: #000; }
+
+
