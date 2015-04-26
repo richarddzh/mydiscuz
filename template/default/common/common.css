@@ -681,7 +681,7 @@ CSS 写作注意事项：
 		.mnh { width: 643px; background: {COMMONBG}; margin-bottom: 0; }
 
 /* 页尾 */
-	#ft { padding: 10px 0 50px; border-top: 1px solid {COMMONBORDER}; line-height: 1.8; color: {FOOTERTEXT}; }
+	#ft { margin-top: 10px; padding: 10px 0 50px; border-top: 1px solid {COMMONBORDER}; line-height: 1.8; color: {FOOTERTEXT}; }
 		#flk { text-align: right; }
 			#flk img { vertical-align: middle; }
 			#scrolltop { visibility: hidden; position: fixed; bottom: 100px; display: block; margin: -30px 0 0; width: 26px; height: 50px; background: url({IMGDIR}/scrolltop.png) no-repeat 50% 0; line-height: 999px; overflow: hidden; cursor: pointer; }
@@ -957,7 +957,7 @@ CSS 写作注意事项：
 	.lk p { color: {MIDTEXT}; }
 	.lk .m li { clear: left; padding: 0 0 10px 98px; }
 		.lk .m img { display: inline; margin-top: 4px; margin-top/*\**/: 1px\9; margin-left: -98px; }
-	.lk .x li { float: left; margin-right: 5px; width: 88px; height: 1.5em; overflow: hidden; }
+	.lk .x li { float: left; margin-right: 5px; width: 98px; height: 28px; overflow: hidden; }
 	.lk_logo .lk_content { float: left; }
 
 /* ------------------------------------------------------------------------ 其他特定功能块 */
@@ -1409,7 +1409,7 @@ a.progressCancel { display: block; float: right; width: 14px; height: 14px; back
 
 
 /* ------------------------------------------------------------------------ 拖拽及页面 DIY */
-.frame, .frame-tab { margin-bottom: 10px; /*border: 1px solid {WRAPBORDERCOLOR}; background: {WRAPBG};*/ }
+.frame, .frame-tab { margin-top: 10px; /*border: 1px solid {WRAPBORDERCOLOR}; background: {WRAPBG};*/ }
 	.title { padding: 0 10px; height: 32px; font-size: 14px; font-weight: 700; line-height: 32px; overflow: hidden; }
 		.frame-title, .frametitle, .tab-title { background: {COMMONBG} url({IMGDIR}/title.png) repeat-x 0 100%; }
 
@@ -1672,11 +1672,14 @@ DIY图片幻灯片未加载时隐藏,模块标识隐藏
 Richard Dong
 */
 .block .dxb_bc .xl li { line-height: 26px; height: 26px; font-size: 115%; }
-.block .dxb_bc .ml img { width: 182px; height: 136px; }
-.block .dxb_bc .slideshow img { width: 364px; height: 260px; }
-.block .dxb_bc .xld .m img { width: 120px; height: 89px; }
 .block .dxb_bc { padding: 10px; }
 .blocktitle { border-bottom: 1px solid {CONTENTSEPARATE}; background: {COMMONBG}; }
+.dz-banner { border: 0; }
+.dz-banner .dxb_bc { padding: 0; }
+.dz-block-links { height: 161px; }
+.dz-block-news { background: url(../../template/default/common/dz-block-news.jpg); height: 326px; width: 384px; }
+.dz-block-book, .dz-block-movie { background: url(../../template/default/common/dz-block-book.jpg); height: 208px; width: 591px; }
+.dz-block-news .blocktitle, .dz-block-book .blocktitle, .dz-block-movie .blocktitle { background: none; border-bottom: 0; }
 /*
 [name]红[/name]
 [iconbgcolor]#BA350F[/iconbgcolor]
