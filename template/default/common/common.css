@@ -605,7 +605,7 @@ CSS 写作注意事项：
 				.scbar_type_td { background: url({IMGDIR}/search.png) no-repeat 0 -370px; }
 					#scbar_type { display: block; padding-left: 5px; text-align: left; text-decoration: none; }
 						#scbar_type_menu { margin-top: -8px; }
-				#scbar_hot { padding-left: 8px; height: 45px; overflow: hidden; }
+				#scbar_hot { display: none; padding-left: 8px; height: 45px; overflow: hidden; }
 					#scbar_hot strong, #scbar_hot a { float: left; margin-right: 8px; white-space: nowrap; }
 
 			#nv { overflow: hidden; padding-left: 3px; height: 33px; background-repeat: repeat-x; background-position: 0 -33px; background-color: #BA350F; background-image: url(../../static/image/common/nv.png); }
@@ -1457,7 +1457,7 @@ a.progressCancel { display: block; float: right; width: 14px; height: 14px; back
 			.frame-tab .tb li { margin: 0; margin-left: -1px; font-weight: 400; }
 			.frame-tab .tb li, .frame-tab .tb li a { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; border-top: none; background: transparent none; }
 				* html .frame-tab .tb li a { float: left; }
-				.frame-tab .tb .a a { background: #FFF; font-weight: 700; }
+				.frame-tab .tb .a a { background: #E69C9C; font-weight: 700; }
 		.frame-tab .tb-c { padding: 10px 16px; }
 
 .block { border: 1px solid {COMMONBORDER}; background: {WRAPBG}; /*margin: 10px 10px 0;*/ }
@@ -1671,7 +1671,7 @@ DIY图片幻灯片未加载时隐藏,模块标识隐藏
 /*
 Richard Dong
 */
-.block .dxb_bc .xl li { line-height: 26px; height: 26px; font-size: 115%; }
+.block .dxb_bc .xl li, .dz-block-tab .dxb_bc .xl li { line-height: 26px; height: 26px; font-size: 115%; }
 .block .dxb_bc { padding: 10px; }
 .blocktitle { border-bottom: 1px solid {CONTENTSEPARATE}; background: {COMMONBG}; }
 .dz-banner { border: 0; }
@@ -1679,7 +1679,8 @@ Richard Dong
 .dz-block-links { height: 161px; }
 .dz-block-news { background: url(../../template/default/common/dz-block-news.jpg); height: 326px; width: 384px; }
 .dz-block-book, .dz-block-movie { background: url(../../template/default/common/dz-block-book.jpg); height: 208px; width: 591px; }
-.dz-block-news .blocktitle, .dz-block-book .blocktitle, .dz-block-movie .blocktitle { background: none; border-bottom: 0; }
+.dz-block-news .blocktitle, .dz-block-book .blocktitle, .dz-block-movie .blocktitle, .dz-block-tab .tab-title { background: none; border-bottom: 0; }
+.dz-block-tab { background: url(../../template/default/common/dz-block-news.jpg); height: 326px; margin-top: 0; border: 1px solid #CDCDCD; }
 /*
 [name]红[/name]
 [iconbgcolor]#BA350F[/iconbgcolor]
